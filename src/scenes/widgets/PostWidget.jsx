@@ -13,6 +13,7 @@ import { setPost } from "state";
 import Friend from "components/Friend";
 import FlexBetween from "components/FlexBetween";
 import { motion } from "framer-motion";
+import { green } from "@mui/material/colors";
 
 const PostWidget = ({
   postId,
@@ -68,7 +69,7 @@ const PostWidget = ({
   };
 
   return (
-    <Box m="2rem 0">
+    <Box m="2rem 0" style={{ maxHeight: "500px", overflowY: "auto" }}> {/* Add maxHeight and overflowY properties */}
       <Box>
         <Friend
           friendId={postUserId}
@@ -128,20 +129,19 @@ const PostWidget = ({
         <Box mt="0.8rem">
           <FlexBetween>
             <form onSubmit={handleCommentSubmit} style={{ display: "flex", alignItems: "center" }}>
-            <input
-  type="text"
-  placeholder="Type your expression..."
-  value={commentInput}
-  onChange={(e) => setCommentInput(e.target.value)}
-  style={{
-    borderRadius: "1rem",
-    padding: "0.5rem",
-    width: "400%", // Set the width to 400% of the original size
-    marginRight: "10px", // Add some margin for spacing
-    backgroundColor: "black", // Set the background color
-  }}
-/>
-
+              <input
+                type="text"
+                placeholder="Type your expression..."
+                value={commentInput}
+                onChange={(e) => setCommentInput(e.target.value)}
+                style={{
+                  borderRadius: "1rem",
+                  padding: "0.5rem",
+                  width: "400%", // Set the width to 400% of the original size
+                  marginRight: "10px", // Add some margin for spacing
+                  backgroundColor: "white", // Set the background color
+                }}
+              />
 
               <IconButton type="submit" onClick={handleCommentSubmit}>
                 <SendOutlined /> {/* Use the send symbol instead of "Submit" button */}

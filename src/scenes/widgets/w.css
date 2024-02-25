@@ -63,4 +63,7 @@
     height: 40px;
     margin-right: 10px;
   }
+  .arc-shape {
+    border-radius: 50px; /* Adjust the border-radius value as needed */
+  }
   

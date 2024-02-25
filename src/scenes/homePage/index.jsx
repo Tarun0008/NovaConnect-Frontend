@@ -7,43 +7,48 @@ import PostsWidget from "scenes/widgets/PostsWidget";
 import AdvertWidget from "scenes/widgets/AdvertWidget";
 import FriendListWidget from "scenes/widgets/FriendListWidget";
 
-import { Advert } from "scenes/widgets/ad";
-import './b.css';
+import Advert from "scenes/widgets/ad";
+import "./b.css";
 
 const HomePage = () => {
   const isNonMobileScreens = useMediaQuery("(min-width:1000px)");
   const { _id, picturePath } = useSelector((state) => state.user);
 
   return (
-    <Box className="bomb-blast-container"> {/* Apply bomb-blast-container class */}
+    <Box className="bomb-blast-container" height="100vh" overflow="auto">
       <Navbar />
       <Box
         width="100%"
         padding="2rem 6%"
         display={isNonMobileScreens ? "flex" : "block"}
-        gap="0.5rem"
+        gap="1rem" // Add gap between sections
         justifyContent="space-between"
       >
         <Box flexBasis={isNonMobileScreens ? "26%" : undefined}>
-          <UserWidget userId={_id} picturePath={picturePath} />
-         <Advert></Advert>
+          <Box mb="2rem">
+            <MyPostWidget picturePath={picturePath} />
+          </Box>
+          <Box mt="2rem">
+            <FriendListWidget userId={_id} />
+          </Box>
+          <Box mt="2rem">
+            <Advert />
+          </Box>
         </Box>
         <Box
           flexBasis={isNonMobileScreens ? "42%" : undefined}
           mt={isNonMobileScreens ? undefined : "2rem"}
-          style={{
-            overflowY: 'auto', // Enable vertical scrolling
-            maxHeight: 'calc(100vh - 4rem)', // Set maximum height based on viewport height
-          }}
+          maxHeight="calc(100vh - 0rem)" // Adjust height to fit remaining space
+          overflow="auto" // Enable scrolling for posts
+          paddingRight="2rem" // Add padding to create space between posts and scrollbar
         >
-          <MyPostWidget picturePath={picturePath} />
           <PostsWidget userId={_id} />
         </Box>
-        
         {isNonMobileScreens && (
           <Box flexBasis="26%">
-            <Box m="2rem 0" />
-            <FriendListWidget userId={_id} />
+            <Box m="1rem 0">
+              <UserWidget userId={_id} picturePath={picturePath} />
+            </Box>
             <AdvertWidget />
           </Box>
         )}

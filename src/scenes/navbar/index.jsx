@@ -48,9 +48,97 @@ const Navbar = () => {
 
   const fullName = `${user.firstName} ${user.lastName}`;
 
+
   const handleMessagesClick = () => {
-    // Your code for handling messages click
+    const notificationsData = [
+      {
+        id: 1,
+        sender: "John Doe",
+        avatar:
+          "https://img.freepik.com/free-photo/androgynous-avatar-non-binary-queer-person_23-2151100226.jpg?size=626&ext=jpg",
+        message: "You have a new friend request from John Doe.",
+        timestamp: "2024-02-25 08:30 AM",
+      },
+      {
+        id: 1,
+        sender: "John Doe",
+        avatar:
+          "https://img.freepik.com/free-photo/androgynous-avatar-non-binary-queer-person_23-2151100226.jpg?size=626&ext=jpg",
+        message: "You have a new friend request from John Doe.",
+        timestamp: "2024-02-25 08:30 AM",
+      },
+      
+      {
+        id: 1,
+        sender: "John Doe",
+        avatar:
+          "https://img.freepik.com/free-photo/androgynous-avatar-non-binary-queer-person_23-2151100226.jpg?size=626&ext=jpg",
+        message: "You have a new friend request from John Doe.",
+        timestamp: "2024-02-25 08:30 AM",
+      },
+      
+      {
+        id: 1,
+        sender: "John Doe",
+        avatar:
+          "https://img.freepik.com/free-photo/androgynous-avatar-non-binary-queer-person_23-2151100226.jpg?size=626&ext=jpg",
+        message: "You have a new friend request from John Doe.",
+        timestamp: "2024-02-25 08:30 AM",
+      },
+      
+      {
+        id: 1,
+        sender: "John Doe",
+        avatar:
+          "https://img.freepik.com/free-photo/androgynous-avatar-non-binary-queer-person_23-2151100226.jpg?size=626&ext=jpg",
+        message: "You have a new friend request from John Doe.",
+        timestamp: "2024-02-25 08:30 AM",
+      },
+      {
+        id: 1,
+        sender: "John Doe",
+        avatar:
+          "https://img.freepik.com/free-photo/androgynous-avatar-non-binary-queer-person_23-2151100226.jpg?size=626&ext=jpg",
+        message: "You have a new friend request from John Doe.",
+        timestamp: "2024-02-25 08:30 AM",
+      },
+      {
+        id: 1,
+        sender: "John Doe",
+        avatar:
+          "https://img.freepik.com/free-photo/androgynous-avatar-non-binary-queer-person_23-2151100226.jpg?size=626&ext=jpg",
+        message: "You have a new friend request from John Doe.",
+        timestamp: "2024-02-25 08:30 AM",
+      },
+      {
+        id: 1,
+        sender: "John Doe",
+        avatar:
+          "https://img.freepik.com/free-photo/androgynous-avatar-non-binary-queer-person_23-2151100226.jpg?size=626&ext=jpg",
+        message: "You have a new friend request from John Doe.",
+        timestamp: "2024-02-25 08:30 AM",
+      },
+      {
+        id: 1,
+        sender: "John Doe",
+        avatar:
+          "https://img.freepik.com/free-photo/androgynous-avatar-non-binary-queer-person_23-2151100226.jpg?size=626&ext=jpg",
+        message: "You have a new friend request from John Doe.",
+        timestamp: "2024-02-25 08:30 AM",
+      },
+      
+      // More notifications
+    ];
+
+    setNotifications(notificationsData);
+    setShowCelebrationEffect(true);
+
+    setTimeout(() => {
+      setShowCelebrationEffect(false);
+    }, 5000);
   };
+
+
 
   const handleCloseNotifications = () => {
     setNotifications([]);

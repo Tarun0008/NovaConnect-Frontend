@@ -75,7 +75,7 @@ const UserWidget = ({ userId, picturePath }) => {
   } = editing ? editedUser : user;
 
   return (
-    <WidgetWrapper className="user-widget" onClick={() => navigate(`/profile/${userId}`)}>
+    <WidgetWrapper className="user-widget arc-shape" onClick={() => navigate(`/profile/${userId}`)}>
       <UserImage image={picturePath} />
       <Box>
         <Typography variant="h4" color={dark} fontWeight="500">

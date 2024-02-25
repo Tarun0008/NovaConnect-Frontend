@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Typography, useTheme } from '@mui/material';
+import { Typography, useTheme, Box } from '@mui/material';
 import FlexBetween from 'components/FlexBetween';
 import WidgetWrapper from 'components/WidgetWrapper';
 
@@ -11,10 +11,8 @@ const AdvertWidget = () => {
 
   const [imageIndex, setImageIndex] = useState(0);
   const images = [
-    'https://izismile.com/img/img2/20090227/bonus/6/creo_26.jpg',
-    'https://www.foreo.com/mysa/wp-content/uploads/sites/2/2020/03/2.loreal_adformen_mascara-768x1024.jpg',
-    'http://1.bp.blogspot.com/-NMbog6aObLA/TwiT9huAztI/AAAAAAAACgI/lkQstfY_xe8/s1600/advertisement+LG.jpg',
-    'http://1.bp.blogspot.com/-NMbog6aObLA/TwiT9huAztI/AAAAAAAACgI/lkQstfY_xe8/s1600/advertisement+LG.jpg',
+    'https://i.postimg.cc/1XvgkRQF/Screenshot-2024-02-25-110741.png',
+    'https://i.postimg.cc/KcfSb1Hd/aa.jpg',
     // Add more image URLs here as needed
   ];
 
@@ -30,27 +28,33 @@ const AdvertWidget = () => {
 
   return (
     <WidgetWrapper>
-      <FlexBetween>
-        <Typography color={dark} variant="h5" fontWeight="500">
-          Sponsored
+      <Box
+        border={`1px solid ${palette.primary.main}`} // Add border with primary color
+        borderRadius="20px" // Apply arc shape with higher border-radius value
+        padding="1rem" // Add padding
+        marginBottom="1rem" // Add margin bottom
+      >
+        <FlexBetween>
+          <Typography color={dark} variant="h5" fontWeight="500">
+            
+          </Typography>
+          <Typography color={medium}></Typography>
+        </FlexBetween>
+        <img
+          width="100%"
+          height="auto"
+          alt="advert"
+          src={images[imageIndex]} // Use current image URL based on imageIndex
+          style={{ borderRadius: '0.75rem', margin: '0.75rem 0' }}
+        />
+        <FlexBetween>
+          <Typography color={main}></Typography>
+          <Typography color={medium}></Typography>
+        </FlexBetween>
+        <Typography color={medium} m="0.5rem 0">
+          
         </Typography>
-        <Typography color={medium}>Create Ad</Typography>
-      </FlexBetween>
-      <img
-        width="100%"
-        height="auto"
-        alt="advert"
-        src={images[imageIndex]} // Use current image URL based on imageIndex
-        style={{ borderRadius: '0.75rem', margin: '0.75rem 0' }}
-      />
-      <FlexBetween>
-        <Typography color={main}>THE FOOD EXPRESS</Typography>
-        <Typography color={medium}>THEFOODEXPRESS.com</Typography>
-      </FlexBetween>
-      <Typography color={medium} m="0.5rem 0">
-        Your pathway to stunning and immaculate beauty and made sure your skin
-        is exfoliating skin and shining like light.
-      </Typography>
+      </Box>
     </WidgetWrapper>
   );
 };

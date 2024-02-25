@@ -2,7 +2,7 @@
 .comment-container {
   max-height: 200px;
   overflow: auto;
-  background-color: black; /* Set background color to black */
+  background-color:#020202; /* Set background color to black */
 }
 .comment-container .comment {
   margin: 0.5rem 0;
