@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+
 
 import {
   Box,
@@ -256,7 +256,7 @@ const Navbar = () => {
             },
           }}
         >
-          Lets Connect
+          NovaConnect
         </Typography>
         {isNonMobileScreens && (
           <FlexBetween
@@ -291,9 +291,7 @@ const Navbar = () => {
       {/* DESKTOP NAV */}
       {isNonMobileScreens ? (
         <FlexBetween gap="2rem">
-          <IconButton onClick={() => dispatch(setMode())}>
-            <DarkMode sx={{ fontSize: "25px" }} />
-          </IconButton>
+        
           <IconButton>
             <Message sx={{ fontSize: "25px" }} />
           </IconButton>

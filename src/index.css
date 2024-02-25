@@ -7,6 +7,7 @@ body,
   height: 100%;
   width: 100%;
   font-family: "Rubik", sans-serif;
+  background: url(s.svg) center/cover no-repeat;
 }
 .celebration-effect {
   animation: celebrationAnimation 1s ease-in-out;

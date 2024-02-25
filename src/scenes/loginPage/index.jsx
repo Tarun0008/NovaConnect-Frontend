@@ -6,8 +6,15 @@ const LoginPage = () => {
   const isNonMobileScreens = useMediaQuery("(min-width: 1000px)");
   return (
       
+    <div>
+    <center>
+    <br/><br/>
+    <h1 style={{ fontFamily: "Quicksand, sans-serif", color: '#beb8ff' }}>NovaConnect</h1>
+
+
+    </center>
         <Form />
-      
+        </div>
   );
 };
 

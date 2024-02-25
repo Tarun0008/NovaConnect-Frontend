@@ -259,7 +259,7 @@ const Form = () => {
               {isRegister ? "REGISTER" : "REGISTER"}
             </Button>
       <div className="links">
-        {isRegister ? "REGISTER" : "LOGIN"}
+        
         <Typography
   onClick={() => {
     setPageType(isRegister ? "login" : "register"); // Toggle between login and register forms
@@ -328,7 +328,7 @@ const Form = () => {
           <input type="submit" value="Sign in" />
         </div>
         <div className="links">
-        {isLogin ? "LOGIN" : "REGISTER"}
+       
             
             <Typography
               onClick={() => {

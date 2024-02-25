@@ -1,4 +1,5 @@
-// color design tokens export
+// theme.js
+
 export const colorTokens = {
   grey: {
     0: "#FFFFFF",
@@ -29,50 +30,26 @@ export const colorTokens = {
   },
 };
 
-// mui theme settings
-export const themeSettings = (mode) => {
+export const themeSettings = () => {
   return {
     palette: {
-      mode: mode,
-      ...(mode === "light"
-        ? {
-            // palette values for light mode
-            primary: {
-              dark: colorTokens.primary[800],
-              main: colorTokens.primary[500],
-              light: colorTokens.primary[50],
-            },
-            neutral: {
-              dark: colorTokens.grey[700],
-              main: colorTokens.grey[500],
-              mediumMain: colorTokens.grey[400],
-              medium: colorTokens.grey[300],
-              light: colorTokens.grey[50],
-            },
-            background: {
-              default: colorTokens.grey[10],
-              alt: colorTokens.grey[0],
-            },
-          }
-        : {
-            // palette values for dark mode
-            primary: {
-              dark: colorTokens.primary[800],
-              main: colorTokens.primary[500],
-              light: colorTokens.primary[50],
-            },
-            neutral: {
-              dark: colorTokens.grey[100],
-              main: colorTokens.grey[200],
-              mediumMain: colorTokens.grey[300],
-              medium: colorTokens.grey[400],
-              light: colorTokens.grey[700],
-            },
-            background: {
-              default: colorTokens.grey[900],
-              alt: colorTokens.grey[800],
-            },
-          }),
+      mode: 'dark', // Always set mode to 'dark'
+      primary: {
+        dark: colorTokens.primary[800],
+        main: colorTokens.primary[500],
+        light: colorTokens.primary[50],
+      },
+      neutral: {
+        dark: colorTokens.grey[100],
+        main: colorTokens.grey[200],
+        mediumMain: colorTokens.grey[300],
+        medium: colorTokens.grey[400],
+        light: colorTokens.grey[700],
+      },
+      background: {
+        default: colorTokens.grey[900],
+        alt: colorTokens.grey[800],
+      },
     },
     typography: {
       fontFamily: ["Rubik", "sans-serif"].join(","),
