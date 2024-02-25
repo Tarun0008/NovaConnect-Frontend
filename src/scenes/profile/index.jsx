@@ -3,10 +3,10 @@ import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 import Navbar from "scenes/navbar";
-import FriendListWidget from "scenes/widgets/FriendListWidget";
-import MyPostWidget from "scenes/widgets/MyPostWidget";
-import PostsWidget from "scenes/widgets/PostsWidget";
-import UserWidget from "scenes/widgets/UserWidget";
+import FriendListWidget from "scenes/boxes/FriendListWidget";
+import MyPostWidget from "scenes/boxes/MyPostWidget";
+import PostsWidget from "scenes/boxes/PostsWidget";
+import UserWidget from "scenes/boxes/UserWidget";
 
 const ProfilePage = () => {
   const [user, setUser] = useState(null);
@@ -25,7 +25,7 @@ const ProfilePage = () => {
 
   useEffect(() => {
     getUser();
-  }, []); // eslint-disable-line react-hooks/exhaustive-deps
+  }, []); 
 
   if (!user) return null;
 

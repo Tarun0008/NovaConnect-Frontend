@@ -173,19 +173,19 @@ const Navbar = () => {
   const handleUserSelect = (user) => {
     setSelectedUser(user);
     setSearchResults([]);
-    navigate(`/profile/${user.id}`); // Navigate to the profile of the selected user
+    navigate(`/profile/${user.id}`); 
   };
   const renderSearchResults = () => {
-    const maxResults = 5; // Maximum number of search results to display
-    const displayedResults = searchResults.slice(0, maxResults); // Get only the first `maxResults` results
+    const maxResults = 5; 
+    const displayedResults = searchResults.slice(0, maxResults); 
     return (
       <Box
         width="100%"
         display={isNonMobileScreens ? "block" : "none"}
         mt="1.5rem"
-        ml="1.5rem" // Add margin to move the search results away from the input box
-        maxHeight="200px" // Adjust the maximum height of the box to reduce its length
-        overflowY="auto" // Enable vertical scrolling if the content exceeds the maximum height
+        ml="1.5rem" 
+        maxHeight="200px" 
+        overflowY="auto" 
       >
         <Box
           display="flex"
@@ -262,11 +262,11 @@ const Navbar = () => {
   value={searchInput}
   onChange={handleInputChange}
   sx={{
-    width: "100px", // Set the width to make the search box wider
-    padding: "5px", // Increase the padding for better visual appearance
-    fontSize: "1rem", // Adjust the font size if needed
-    borderRadius: "5px", // Add border radius for rounded corners
-  // Change background color if desired
+    width: "100px", 
+    padding: "5px", 
+    fontSize: "1rem", 
+    borderRadius: "5px", 
+  
   }}
 />
 
@@ -277,10 +277,10 @@ const Navbar = () => {
         )}
       </FlexBetween>
 
-      {/* Display search results below the input box */}
+     
       {searchResults.length > 0 && renderSearchResults()}
 
-      {/* DESKTOP NAV */}
+   
       {isNonMobileScreens ? (
         <FlexBetween gap="2rem">
         
@@ -322,7 +322,7 @@ const Navbar = () => {
         </IconButton>
       )}
 
-      {/* MOBILE NAV */}
+      
       {!isNonMobileScreens && isMobileMenuToggled && (
         <Box
           position="fixed"
@@ -388,7 +388,7 @@ const Navbar = () => {
         </Box>
       )}
 
-      {/* Display Notifications with Celebration Effect */}
+     
       {notifications.length > 0 && (
         <Box
           className={showCelebrationEffect ? "celebration-effect" : ""}

@@ -5,7 +5,7 @@ import {
   FavoriteOutlined,
   ShareOutlined,
   CloseOutlined,
-  SendOutlined // Import the SendOutlined icon
+  SendOutlined 
 } from "@mui/icons-material";
 import { Box, Divider, IconButton, Typography } from "@mui/material";
 import { useDispatch, useSelector } from "react-redux";
@@ -53,14 +53,14 @@ const PostWidget = ({
 
   const handleCommentSubmit = async (e) => {
     e.preventDefault();
-    // Here you can handle the submission of the comment
+    
     console.log("Comment submitted:", commentInput);
-    // Add the new comment to the comments list
+    
     setComments([...comments, commentInput]);
     setTotalComments(totalComments + 1);
-    // Reset comment input field
+   
     setCommentInput("");
-    // Close the comment box after submitting the comment
+  
     setIsCommenting(false);
   };
 
@@ -69,7 +69,7 @@ const PostWidget = ({
   };
 
   return (
-    <Box m="2rem 0" style={{ maxHeight: "500px", overflowY: "auto" }}> {/* Add maxHeight and overflowY properties */}
+    <Box m="2rem 0" style={{ maxHeight: "500px", overflowY: "auto" }}> {}
       <Box>
         <Friend
           friendId={postUserId}
@@ -99,7 +99,7 @@ const PostWidget = ({
           <FlexBetween gap="0.3rem">
             <IconButton onClick={patchLike}>
               <motion.div
-                animate={{ scale: isLikedByCurrentUser ? 1.5 : 1 }} // Scale the heart icon if liked
+                animate={{ scale: isLikedByCurrentUser ? 1.5 : 1 }} 
                 transition={{ duration: 0.2 }}
               >
                 {isLikedByCurrentUser ? (
@@ -116,7 +116,7 @@ const PostWidget = ({
             <IconButton onClick={() => setIsCommenting(!isCommenting)}>
               <ChatBubbleOutlineOutlined />
             </IconButton>
-            <Typography>{totalComments}</Typography> {/* Display total comments count */}
+            <Typography>{totalComments}</Typography> 
           </FlexBetween>
         </FlexBetween>
 
@@ -124,7 +124,7 @@ const PostWidget = ({
           <ShareOutlined />
         </IconButton>
       </FlexBetween>
-      {/* Display comments input box and existing comments */}
+
       {(isCommenting || comments.length > 0) && (
         <Box mt="0.8rem">
           <FlexBetween>
@@ -137,22 +137,22 @@ const PostWidget = ({
                 style={{
                   borderRadius: "1rem",
                   padding: "0.5rem",
-                  width: "400%", // Set the width to 400% of the original size
-                  marginRight: "10px", // Add some margin for spacing
-                  backgroundColor: "white", // Set the background color
+                  width: "400%", 
+                  marginRight: "10px", 
+                  backgroundColor: "white", 
                 }}
               />
 
               <IconButton type="submit" onClick={handleCommentSubmit}>
-                <SendOutlined /> {/* Use the send symbol instead of "Submit" button */}
+                <SendOutlined /> {}
               </IconButton>
             </form>
-            {/* Close button */}
+           
             <IconButton onClick={handleCloseCommentBox}>
               <CloseOutlined />
             </IconButton>
           </FlexBetween>
-          {/* Display existing comments */}
+          
           {comments.length > 0 && (
             <Box mt="0.5rem" style={{ background: "black", padding: "1rem", borderRadius: "0.5rem" }}>
               <div className="comment-container">

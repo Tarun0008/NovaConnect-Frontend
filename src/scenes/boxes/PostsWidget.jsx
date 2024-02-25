@@ -43,7 +43,7 @@ const PostsWidget = ({ userId, isProfile = false }) => {
     } else {
       getPosts();
     }
-  }, [isProfile, userId, token]); // Add dependencies to avoid unnecessary re-fetching
+  }, [isProfile, userId, token]); 
 
   return (
     <>

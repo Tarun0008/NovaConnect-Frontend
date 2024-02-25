@@ -25,17 +25,16 @@ const FriendListWidget = ({ userId }) => {
 
   useEffect(() => {
     getFriends();
-  }, []); // eslint-disable-line react-hooks/exhaustive-deps
-
+  }, []); 
   return (
     <Box
       display="flex"
       flexDirection="column"
       gap="1.5rem"
       style={{
-        overflow: "hidden", // Hide overflow content
-        borderRadius: "50px", // Apply rabbet arc shape
-        border: `2px solid ${palette.primary.main}`, // Add border
+        overflow: "hidden", 
+        borderRadius: "50px", 
+        border: `2px solid ${palette.primary.main}`, 
       }}
     >
       <WidgetWrapper>

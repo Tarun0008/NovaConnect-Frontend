@@ -1,13 +1,13 @@
 import { Box, useMediaQuery } from "@mui/material";
 import { useSelector } from "react-redux";
 import Navbar from "scenes/navbar";
-import UserWidget from "scenes/widgets/UserWidget";
-import MyPostWidget from "scenes/widgets/MyPostWidget";
-import PostsWidget from "scenes/widgets/PostsWidget";
-import AdvertWidget from "scenes/widgets/AdvertWidget";
-import FriendListWidget from "scenes/widgets/FriendListWidget";
+import UserWidget from "scenes/boxes/UserWidget";
+import MyPostWidget from "scenes/boxes/MyPostWidget";
+import PostsWidget from "scenes/boxes/PostsWidget";
+import AdvertWidget from "scenes/boxes/AdvertWidget";
+import FriendListWidget from "scenes/boxes/FriendListWidget";
 
-import Advert from "scenes/widgets/ad";
+import Advert from "scenes/boxes/ad";
 import "./b.css";
 
 const HomePage = () => {
@@ -21,7 +21,7 @@ const HomePage = () => {
         width="100%"
         padding="2rem 6%"
         display={isNonMobileScreens ? "flex" : "block"}
-        gap="1rem" // Add gap between sections
+        gap="1rem" 
         justifyContent="space-between"
       >
         <Box flexBasis={isNonMobileScreens ? "26%" : undefined}>
@@ -38,9 +38,9 @@ const HomePage = () => {
         <Box
           flexBasis={isNonMobileScreens ? "42%" : undefined}
           mt={isNonMobileScreens ? undefined : "2rem"}
-          maxHeight="calc(100vh - 0rem)" // Adjust height to fit remaining space
-          overflow="auto" // Enable scrolling for posts
-          paddingRight="2rem" // Add padding to create space between posts and scrollbar
+          maxHeight="calc(100vh - 0rem)" 
+          overflow="auto"
+          paddingRight="2rem" 
         >
           <PostsWidget userId={_id} />
         </Box>

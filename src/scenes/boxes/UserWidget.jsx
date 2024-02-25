@@ -5,7 +5,7 @@ import {
   LocationOnOutlined,
   WorkOutlineOutlined,
 } from "@mui/icons-material";
-import "./w.css"; // Import custom CSS for styling
+import "./w.css"; 
 import { Box, Typography, useTheme, Button, TextField } from "@mui/material";
 import UserImage from "components/UserImage";
 import WidgetWrapper from "components/WidgetWrapper";
@@ -35,8 +35,7 @@ const UserWidget = ({ userId, picturePath }) => {
 
   useEffect(() => {
     getUser();
-  }, []); // eslint-disable-line react-hooks/exhaustive-deps
-
+  }, []); 
   const handleEdit = () => {
     setEditing(true);
     setEditedUser(user);
