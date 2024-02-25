@@ -1,15 +1,15 @@
 ***LIVE DEMO***
-https://novaconnect.vercel.app/
+**https://novaconnect.vercel.app/**
 
 ***STEPS TO RUN*** 
 
 **TO INSTALL ALL DEPENDENCIES**
-NPM INSTALL
-OR
-NPM INSTALL --FORCE
+**NPM INSTALL**
+**OR**
+**NPM INSTALL --FORCE**
 
 **TO START**
-NPM START
+**NPM START**
 
 **OUTPUT SCREENSHOTS**
 ![1](https://github.com/Tarun0008/NovaConnect-Frontend/assets/143323486/ff7aa915-7fc8-4f39-9206-77716d1cd623)
