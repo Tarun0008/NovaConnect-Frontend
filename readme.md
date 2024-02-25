@@ -21,7 +21,7 @@ NPM START
 ![6](https://github.com/Tarun0008/NovaConnect-Frontend/assets/143323486/3e9ff626-08fa-46e2-b64e-aa17601b2607)
 ![7](https://github.com/Tarun0008/NovaConnect-Frontend/assets/143323486/0a49fce9-3724-4ba7-8f60-59921f5d4a67)
 ![8](https://github.com/Tarun0008/NovaConnect-Frontend/assets/143323486/c0db8f35-7c43-49ef-81ee-ce88e2ba8465)
-![9](https://github.com/Tarun0008/NovaConnect-Frontend/assets/143323486/acdfba5a-e204-447e-9c57-e85c8a4fd61a)
+
 
 
 
