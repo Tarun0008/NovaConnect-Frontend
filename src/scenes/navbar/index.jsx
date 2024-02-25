@@ -53,77 +53,69 @@ const Navbar = () => {
     const notificationsData = [
       {
         id: 1,
-        sender: "John Doe",
+        sender: "ARUN",
         avatar:
-          "https://img.freepik.com/free-photo/androgynous-avatar-non-binary-queer-person_23-2151100226.jpg?size=626&ext=jpg",
-        message: "You have a new friend request from John Doe.",
+          "https://img.freepik.com/free-photo/androgynous-avatar-non-binary-queer-person_23-2151100226.jpg?size=626&ext=jpg&ga=GA1.1.234903473.1708700866&semt=sph",
+        message: "You have a new friend request from Arun.",
         timestamp: "2024-02-25 08:30 AM",
       },
       {
         id: 1,
-        sender: "John Doe",
+        sender: "Gopal",
         avatar:
-          "https://img.freepik.com/free-photo/androgynous-avatar-non-binary-queer-person_23-2151100226.jpg?size=626&ext=jpg",
-        message: "You have a new friend request from John Doe.",
-        timestamp: "2024-02-25 08:30 AM",
-      },
-      
-      {
-        id: 1,
-        sender: "John Doe",
-        avatar:
-          "https://img.freepik.com/free-photo/androgynous-avatar-non-binary-queer-person_23-2151100226.jpg?size=626&ext=jpg",
-        message: "You have a new friend request from John Doe.",
+          "https://img.freepik.com/premium-photo/landscape-architect-digital-avatar-generative-ai_934475-9208.jpg?size=626&ext=jpg&ga=GA1.1.234903473.1708700866&semt=sph",
+        message: "You have a new friend request from Arun",
         timestamp: "2024-02-25 08:30 AM",
       },
       
       {
         id: 1,
-        sender: "John Doe",
+        sender: "Dinesh",
         avatar:
-          "https://img.freepik.com/free-photo/androgynous-avatar-non-binary-queer-person_23-2151100226.jpg?size=626&ext=jpg",
-        message: "You have a new friend request from John Doe.",
+          "https://img.freepik.com/premium-photo/memoji-happy-man-white-background-emoji_826801-6838.jpg?size=626&ext=jpg&ga=GA1.1.234903473.1708700866&semt=sph",
+        message: "You have a new friend request from Kishore.",
         timestamp: "2024-02-25 08:30 AM",
       },
       
       {
         id: 1,
-        sender: "John Doe",
+        sender: "Lokhesh",
+        avatar:
+          "https://img.freepik.com/free-psd/3d-illustration-person-with-glasses_23-2149436185.jpg?size=626&ext=jpg&ga=GA1.1.234903473.1708700866&semt=sph",
+        message: "You have a new friend request from Shakthivel",
+        timestamp: "2024-02-25 08:30 AM",
+      },
+      
+      {
+        id: 1,
+        sender: "Shajith",
         avatar:
           "https://img.freepik.com/free-photo/androgynous-avatar-non-binary-queer-person_23-2151100226.jpg?size=626&ext=jpg",
-        message: "You have a new friend request from John Doe.",
+        message: "You have a new friend request from dinu.",
         timestamp: "2024-02-25 08:30 AM",
       },
       {
         id: 1,
-        sender: "John Doe",
+        sender: "Gokul",
         avatar:
           "https://img.freepik.com/free-photo/androgynous-avatar-non-binary-queer-person_23-2151100226.jpg?size=626&ext=jpg",
-        message: "You have a new friend request from John Doe.",
+        message: "You have a new friend request from hari.",
         timestamp: "2024-02-25 08:30 AM",
       },
       {
         id: 1,
-        sender: "John Doe",
+        sender: "Manoj",
         avatar:
-          "https://img.freepik.com/free-photo/androgynous-avatar-non-binary-queer-person_23-2151100226.jpg?size=626&ext=jpg",
-        message: "You have a new friend request from John Doe.",
+          "https://img.freepik.com/free-photo/androgynous-avatar-non-binary-queer-person_23-2151100166.jpg?size=626&ext=jpg&ga=GA1.1.234903473.1708700866&semt=sph",
+        message: "You have a new friend request from gokul.",
         timestamp: "2024-02-25 08:30 AM",
       },
       {
         id: 1,
-        sender: "John Doe",
+        sender: "Naveen",
         avatar:
           "https://img.freepik.com/free-photo/androgynous-avatar-non-binary-queer-person_23-2151100226.jpg?size=626&ext=jpg",
-        message: "You have a new friend request from John Doe.",
-        timestamp: "2024-02-25 08:30 AM",
-      },
-      {
-        id: 1,
-        sender: "John Doe",
-        avatar:
-          "https://img.freepik.com/free-photo/androgynous-avatar-non-binary-queer-person_23-2151100226.jpg?size=626&ext=jpg",
-        message: "You have a new friend request from John Doe.",
+        message: "You have a new friend request from Naveen.",
         timestamp: "2024-02-25 08:30 AM",
       },
       
